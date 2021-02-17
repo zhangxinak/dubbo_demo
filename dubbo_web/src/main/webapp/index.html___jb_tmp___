@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物广场</title>
+</head>
+<script>
+    function login(username,password){
+        var url = "http://localhost:8080/login.do"
+        var request = new XMLHttpRequest();
+        request.open("POST", url);
+        var map={};
+        map.username=username;
+        map.password=password;
+        request.send(map.toString())
+    }
+</script>
+<body>
+<h1> hello world ,Welcome to My Web Application ! </h1>
+</body>
+</html>

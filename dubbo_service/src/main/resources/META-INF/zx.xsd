@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://com.njupt.zxns"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://com.njupt.zxns">
+
+	<!--<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>-->
+	<!--<xsd:import namespace="http://www.springframework.org/schema/beans"/>-->
+	<!--<xsd:import namespace="http://www.springframework.org/schema/tool"/>-->
+
+
+	<xsd:complexType name="beanType">
+		<xsd:attribute name="id" type="xsd:string"></xsd:attribute>
+		<xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+	</xsd:complexType>
+
+
+	<xsd:element name="mb" type="beanType">
+		<xsd:annotation>
+			<xsd:documentation><![CDATA[ The mybean config ]]></xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+
+
+
+</xsd:schema>
